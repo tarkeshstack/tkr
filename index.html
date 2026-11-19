@@ -543,6 +543,10 @@ html[data-look="white"]{
 .go .gt span{display:block}
 .career{margin:4px 0 22px;padding:10px 14px;border:1px solid var(--line);border-radius:18px;background:var(--card2);overflow-x:auto}
 .career svg{display:block;width:100%;min-width:560px;height:auto}
+
+.htags{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 4px;padding:0}
+.htags li{font:600 .82rem 'IBM Plex Mono',monospace;letter-spacing:.04em;padding:7px 14px;border-radius:99px;border:1px solid color-mix(in srgb,var(--amber) 55%,transparent);background:color-mix(in srgb,var(--amber) 12%,transparent);color:var(--amber)}
+@media(max-width:700px){.htags{gap:6px}.htags li{font-size:.76rem;padding:6px 11px}}
 </style>
 </head>
 <body>
@@ -570,6 +574,7 @@ html[data-look="white"]{
       <h1><span>Tarkeshwar</span><span class="out">Kumar</span></h1>
       <p class="thesis">Delivery leader, data expert, builder and teacher.</p>
       <p class="lede">Service Delivery Manager at Tata Consultancy Services in Bangalore. Eighteen years in data analytics and warehousing, five years onsite in the USA and UK, and now building free tools and teaching on YouTube.</p>
+      <ul class="htags" aria-label="What I do"><li>Build</li><li>Test</li><li>Delivery</li><li>Pre-sales</li><li>PoC</li><li>Demos</li><li>PPT</li></ul>
       <div class="cta">
         <a class="btn p" href="#work">See my experience</a>
         <a class="btn o" href="#creations">View my portfolio</a>
