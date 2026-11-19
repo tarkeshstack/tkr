@@ -532,6 +532,17 @@ html[data-look="white"]{
 
 .ban{border-radius:14px;overflow:hidden;margin-bottom:14px;border:1px solid var(--line)}
 .ban svg{display:block;width:100%;height:auto;aspect-ratio:8/3}
+
+.vhero{position:relative;overflow:hidden}
+.vart{position:absolute;right:0;top:50%;transform:translateY(-50%);width:min(300px,34%);opacity:.95;pointer-events:none}
+.vart svg{display:block;width:100%;height:auto}
+@media(max-width:700px){.vart{position:static;transform:none;width:100%;max-width:240px;margin:0 0 10px}}
+.go{display:flex!important;align-items:center;gap:14px}
+.go .gi{flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;color:var(--on-amber);background:linear-gradient(135deg,var(--amber),var(--amber2))}
+.go .gt{display:block;min-width:0}
+.go .gt span{display:block}
+.career{margin:4px 0 22px;padding:10px 14px;border:1px solid var(--line);border-radius:18px;background:var(--card2);overflow-x:auto}
+.career svg{display:block;width:100%;min-width:560px;height:auto}
 </style>
 </head>
 <body>
@@ -623,6 +634,11 @@ html[data-look="white"]{
 <section aria-labelledby="h-story">
   <div class="wrap">
     <div class="sh"><span class="k">My story</span><h2 id="h-story">From writing mappings to leading delivery</h2></div>
+    <div class="career" aria-hidden="true"><svg viewBox="0 0 800 150" preserveAspectRatio="xMidYMid meet">
+<path d="M40 100 C 160 100, 160 50, 280 50 S 400 110, 520 80 S 680 40, 760 40" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10" opacity=".6"/>
+<g fill="var(--amber)"><circle cx="40" cy="100" r="11"/><circle cx="190" cy="76" r="11"/><circle cx="340" cy="84" r="11"/><circle cx="520" cy="80" r="11"/><circle cx="760" cy="40" r="13"/></g>
+<g font-family="IBM Plex Mono,monospace" font-size="13" fill="var(--muted)" text-anchor="middle"><text x="40" y="132">2007</text><text x="190" y="108">2010 USA</text><text x="340" y="116">2013 India</text><text x="520" y="112">2021 TCS</text><text x="760" y="72">AI 2023</text></g>
+<g font-family="IBM Plex Sans,sans-serif" font-size="13" font-weight="600" fill="var(--text)" text-anchor="middle"><text x="40" y="76">Engineer</text><text x="190" y="52">Onsite</text><text x="340" y="60">Manager</text><text x="520" y="56">Delivery</text><text x="760" y="16">Champion</text></g></svg></div>
     <div class="story">
       <div>
         <p>I started in 2007 as a software engineer, writing Informatica mappings and Teradata queries. Three years on the ground in the US taught me to translate between business users and engineering teams, and that skill has shaped everything since.</p>
@@ -630,9 +646,9 @@ html[data-look="white"]{
         <p>Outside work I build small free web tools, record short lessons on my YouTube channel Life &amp; Beyond, and coach people in communication, Informatica, spoken English and Hindi. The thread through all of it is the same: make it simple enough to use.</p>
       </div>
       <div class="golist">
-        <a class="go" href="#work"><b>The professional side</b><span>Experience, projects, skills and certifications</span></a>
-        <a class="go" href="#creations"><b>The builder side</b><span>Free tools and apps you can open right now</span></a>
-        <a class="go" href="#videos"><b>The teacher side</b><span>42 short lessons in 5 courses</span></a>
+        <a class="go" href="#work"><span class="gi"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></span><span class="gt"><b>The professional side</b><span>Experience, projects, skills and certifications</span></span></a>
+        <a class="go" href="#creations"><span class="gi"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></span><span class="gt"><b>The builder side</b><span>Free tools and apps you can open right now</span></span></a>
+        <a class="go" href="#videos"><span class="gi"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg></span><span class="gt"><b>The teacher side</b><span>42 short lessons in 5 courses</span></span></a>
       </div>
     </div>
   </div>
@@ -695,7 +711,11 @@ html[data-look="white"]{
 
 </div>
 <div class="view" id="view-work" hidden>
-<div class="vhero ov"><div class="wrap">
+<div class="vhero ov"><div class="wrap" style="position:relative"><div class="vart"><svg viewBox="0 0 300 200" aria-hidden="true"><circle cx="150" cy="100" r="86" fill="var(--accent)" opacity=".12"/>
+<rect x="92" y="78" width="116" height="80" rx="12" fill="var(--amber)"/><path d="M128 78v-12a8 8 0 0 1 8-8h28a8 8 0 0 1 8 8v12" fill="none" stroke="var(--amber)" stroke-width="8"/>
+<rect x="92" y="108" width="116" height="8" fill="var(--on-amber)" opacity=".25"/><rect x="141" y="104" width="18" height="18" rx="4" fill="var(--on-amber)" opacity=".6"/>
+<g fill="var(--accent)"><path d="M52 48a14 14 0 1 1 28 0c0 14-14 28-14 28S52 62 52 48z"/><path d="M220 36a14 14 0 1 1 28 0c0 14-14 28-14 28S220 50 220 36z"/><path d="M232 128a14 14 0 1 1 28 0c0 14-14 28-14 28S232 142 232 128z"/></g>
+<g fill="#fff"><circle cx="66" cy="48" r="5"/><circle cx="234" cy="36" r="5"/><circle cx="246" cy="128" r="5"/></g></svg></div>
   <div class="eyebrow">Professional</div>
   <h1>Eighteen years of <em>data delivery</em></h1>
   <p>Service Delivery Manager. Core roles: Project Manager, Delivery Manager and BI Solution Architect. Fortune 500 customers across India, the US, the UK and Europe.</p>
@@ -895,7 +915,12 @@ html[data-look="white"]{
 
 </div>
 <div class="view" id="view-creations" hidden>
-<div class="vhero"><div class="wrap">
+<div class="vhero"><div class="wrap" style="position:relative"><div class="vart"><svg viewBox="0 0 300 200" aria-hidden="true"><circle cx="150" cy="100" r="86" fill="var(--accent)" opacity=".12"/>
+<rect x="46" y="44" width="150" height="104" rx="12" fill="var(--card2)" stroke="var(--accent)" stroke-width="3"/><rect x="46" y="44" width="150" height="24" rx="12" fill="var(--accent)"/><circle cx="62" cy="56" r="4" fill="#fff"/><circle cx="76" cy="56" r="4" fill="#fff" opacity=".7"/>
+<rect x="60" y="82" width="52" height="10" rx="5" fill="var(--amber)"/><rect x="60" y="100" width="90" height="8" rx="4" fill="var(--accent)" opacity=".35"/><rect x="60" y="116" width="70" height="8" rx="4" fill="var(--accent)" opacity=".35"/>
+<rect x="150" y="96" width="156" height="0" fill="none"/>
+<rect x="170" y="110" width="100" height="74" rx="12" fill="var(--amber)"/><rect x="170" y="110" width="100" height="18" rx="9" fill="#fff" opacity=".35"/>
+<g fill="#fff"><rect x="184" y="140" width="18" height="18" rx="5" opacity=".9"/><rect x="210" y="140" width="18" height="18" rx="5" opacity=".7"/><rect x="236" y="140" width="18" height="18" rx="5" opacity=".9"/></g></svg></div>
   <div class="eyebrow">Portfolio</div>
   <h1>Things I have <em>built</em></h1>
   <p>All my sites and standalone apps in one place, always growing. Free, browser-based tools that open instantly, each solving a small everyday problem in the simplest way I could find.</p>
@@ -914,7 +939,11 @@ html[data-look="white"]{
 </div>
 </div>
 <div class="view" id="view-videos" hidden>
-  <div class="vhero"><div class="wrap">
+  <div class="vhero"><div class="wrap" style="position:relative"><div class="vart"><svg viewBox="0 0 300 200" aria-hidden="true"><circle cx="150" cy="100" r="86" fill="var(--accent)" opacity=".12"/>
+<rect x="50" y="46" width="200" height="112" rx="14" fill="var(--card2)" stroke="var(--accent)" stroke-width="3"/>
+<circle cx="150" cy="102" r="30" fill="var(--amber)"/><path d="M142 86l26 16-26 16z" fill="var(--on-amber)"/>
+<rect x="64" y="168" width="172" height="8" rx="4" fill="var(--accent)" opacity=".25"/><rect x="64" y="168" width="92" height="8" rx="4" fill="var(--accent)"/>
+<g fill="var(--amber)"><path d="M252 36l4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1z"/></g></svg></div>
     <div class="eyebrow">Free video lessons</div>
     <h1>Learn with <em>Tarkeshwar</em></h1>
     <p>Short, practical videos on working smarter, presenting and pitching, mindset, data and AI in simple Hinglish, and Hindi shayari. 42 videos across 5 courses.</p>
