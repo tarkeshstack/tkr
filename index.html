@@ -461,6 +461,28 @@ html[data-look="white"]{
 [data-look="white"] .card:hover{box-shadow:0 14px 34px rgba(20,30,60,.1)}
 [data-look="white"] .vcard .th{box-shadow:0 8px 20px rgba(20,30,60,.12)}
 [data-look="white"] .gal figure{box-shadow:0 8px 24px rgba(20,30,60,.08)}
+
+/* creations hub */
+.hubtabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.hubtabs button{font:600 14px 'IBM Plex Sans',sans-serif;padding:10px 16px;border-radius:99px;border:1px solid var(--line2);background:var(--card2);color:var(--muted);cursor:pointer}
+.hubtabs button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--on-amber)}
+.hubtabs i{font-style:normal;font-size:11.5px;margin-left:7px;padding:2px 8px;border-radius:99px;background:color-mix(in srgb,currentColor 16%,transparent)}
+.hubq{width:100%;padding:13px 18px;border-radius:99px;border:1px solid var(--line2);background:var(--card2);color:var(--text);font:15px 'IBM Plex Sans',sans-serif;margin-bottom:22px;outline:none}
+.hubq:focus{border-color:var(--accent)}
+.hubgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.hcard{background:var(--card2);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.hcard:hover{transform:translateY(-5px);box-shadow:0 18px 36px rgba(0,0,0,.14)}
+.hthumb{position:relative;height:150px;display:grid;place-items:center;background:linear-gradient(160deg,color-mix(in srgb,var(--g1) 24%,var(--card2)),color-mix(in srgb,var(--g2) 34%,var(--card2)))}
+.hthumb em{position:absolute;left:12px;top:12px;font-style:normal;font:700 10.5px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:99px;color:var(--text);background:color-mix(in srgb,var(--g1) 20%,var(--card2))}
+.hthumb b{position:absolute;right:12px;top:12px;font:700 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;padding:4px 9px;border-radius:99px;background:var(--g1);color:#fff}
+.hemo{font-size:72px;line-height:1;transition:transform .3s}
+.hcard:hover .hemo{transform:scale(1.1) rotate(-4deg)}
+.hbody{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.hbody h3{font-size:18px;letter-spacing:-.01em}
+.hbody p{color:var(--muted);font-size:14px;line-height:1.6;flex:1}
+.hbody .btn{align-self:stretch;text-align:center;margin-top:6px}
+.hsoon{margin-top:6px;font-size:12.5px;color:var(--muted);text-align:center;padding:10px;border-radius:12px;border:1px dashed var(--line2)}
+.hubnote{margin-top:22px;font-size:13px;color:var(--muted);text-align:center}
 </style>
 </head>
 <body>
@@ -770,47 +792,19 @@ html[data-look="white"]{
 <div class="vhero"><div class="wrap">
   <div class="eyebrow">Creations</div>
   <h1>Things I have <em>built</em></h1>
-  <p>Free, browser-based tools that open instantly with no login. Each one solves a small everyday problem in the simplest way I could find.</p>
+  <p>All my sites and standalone apps in one place, always growing. Free, browser-based tools that open instantly, each solving a small everyday problem in the simplest way I could find.</p>
   <div class="cta"><a class="btn p" href="https://wa.me/917735734061?text=Hi%20Tarkeshwar%2C%20I%20need%20an%20app%20built." target="_blank" rel="noopener">Request a custom app</a></div>
 </div></div>
-<div class="wrap" style="padding-top:28px;padding-bottom:10px">
-  <div class="pgrid">
-      <article class="card proj">
-        <div class="dom">webstore.solutions</div>
-        <h3>Appzy Digital</h3>
-        <p>A hub of 20+ small free tools in one place: PDF to Word, password generator, QR generator, unit converter, translator and more. Open one and use it straight away.</p>
-        <div class="chips"><span class="chip">Free</span><span class="chip">No login</span><span class="chip">20+ tools</span></div>
-        <a class="btn n" href="https://webstore.solutions" target="_blank" rel="noopener">Open Appzy Digital</a>
-      </article>
-      <article class="card proj">
-        <div class="dom">dutybeauty.work</div>
-        <h3>College to Corporate</h3>
-        <p>A guide for freshers on corporate terms, processes and habits: what to do, what to avoid, words to know, ready-to-use messages and career tips.</p>
-        <div class="chips"><span class="chip">Freshers</span><span class="chip">Career</span><span class="chip">Workplace</span></div>
-        <a class="btn n" href="https://dutybeauty.work" target="_blank" rel="noopener">Open College to Corporate</a>
-      </article>
-      <article class="card proj">
-        <div class="dom">readwritespeak.online</div>
-        <h3>Read Write Speak</h3>
-        <p>Make communication better, make life easier. Hints for talking and writing well with seniors, juniors, relatives and teachers, plus letters and occasions. In English and Hinglish.</p>
-        <div class="chips"><span class="chip">Communication</span><span class="chip">Letters</span><span class="chip">Hinglish</span></div>
-        <a class="btn n" href="https://readwritespeak.online" target="_blank" rel="noopener">Open Read Write Speak</a>
-      </article>
-      <article class="card proj">
-        <div class="dom">babynames.website</div>
-        <h3>Name Mixer</h3>
-        <p>A playful tool for mixing and exploring baby names.</p>
-        <div class="chips"><span class="chip">Family</span><span class="chip">Fun</span></div>
-        <a class="btn n" href="https://babynames.website" target="_blank" rel="noopener">Open Name Mixer</a>
-      </article>
-      <article class="card proj feat">
-        <div class="dom">Made to order</div>
-        <h3>Need an app of your own?</h3>
-        <p>Tell me the problem. I build the app myself and send you a working link. Simple, browser-based and designed around how you will actually use it.</p>
-        <div class="chips"><span class="chip">Custom apps</span><span class="chip">Browser based</span></div>
-        <a class="btn n" href="https://wa.me/917735734061?text=Hi%20Tarkeshwar%2C%20I%20need%20an%20app%20built." target="_blank" rel="noopener">Tell me what you need</a>
-      </article>
+<div class="wrap" style="padding-top:28px;padding-bottom:30px">
+  <div class="hubtabs" id="hubTabs" role="group" aria-label="Creation type">
+    <button type="button" data-t="web" aria-pressed="true">🌐 Live on web<i id="hc1"></i></button>
+    <button type="button" data-t="gh" aria-pressed="false">🚀 Live on GitHub<i id="hc2"></i></button>
+    <button type="button" data-t="concept" aria-pressed="false">💡 Concept<i id="hc3"></i></button>
   </div>
+  <input class="hubq" id="hubQ" type="search" placeholder="Search my creations" aria-label="Search my creations">
+  <div class="hubgrid" id="hubGrid"></div>
+  <p class="empty" id="hubEmpty" hidden style="text-align:center;color:var(--muted);padding:30px">Nothing matches your search.</p>
+  <p class="hubnote">Live on web = own domain. Live on GitHub = hosted on GitHub Pages. Concept = built, but no public link yet.</p>
 </div>
 </div>
 <div class="view" id="view-videos" hidden>
@@ -1069,6 +1063,108 @@ html[data-look="white"]{
   }
   window.addEventListener('hashchange',route);
   route();
+})();
+
+(function(){
+  var PAGES="https://tarkeshstack.github.io/tools/";
+  var GR={Business:["#6366f1","#8b5cf6"],Career:["#f59e0b","#f97316"],Learning:["#0ea5e9","#6366f1"],Utility:["#14b8a6","#0ea5e9"],Travel:["#06b6d4","#3b82f6"],Community:["#ec4899","#f43f5e"],Communication:["#d946ef","#8b5cf6"],Platform:["#3b82f6","#4f46e5"],Portfolio:["#64748b","#334155"],Documents:["#ef4444","#f97316"],Kids:["#22c55e","#84cc16"],Health:["#10b981","#06b6d4"],Shopping:["#f43f5e","#f59e0b"]};
+  var DESC={"python-script-builder": "Drag, drop and generate ready-to-run Python scripts without writing code. Built for non-coders who just want automation to work.", "image-to-ppt": "Upload a screenshot, slide image or PDF and get back editable PowerPoint slides, with real text boxes instead of flat pictures.", "resume-builder": "Speak or type and get a clean, polished resume for yourself, a friend or a family member. AI tidies the wording for you.", "tripfinder": "Compare flights side by side in a Skyscanner-style layout. Filter by price, stops and timing to find the right fare fast.", "splitcart": "Spot a bulk-buy deal and split it with neighbours. See each person's exact share, saving and pickup time at a glance.", "emergency-qr": "Generate a printable QR code that dials a masked number when scanned, so help can reach you without exposing your real phone number.", "speak-easy": "Say a sentence out loud and get instant, friendly feedback on grammar and natural phrasing, then hear the improved version read back.", "india-travel-guide": "Famous Indian sights grouped by what's actually nearby, with timings and one-tap links for trains, hotels, cabs and food.", "six-thinking-hats": "Bring any idea to the table and see it through six thinking hats: facts, feelings, risks, benefits, creativity and process, ending in a verdict.", "pocket-testbench": "A pocket-sized testing workbench for planning test cases and tracking results straight from your phone.", "backlog-builder": "Describe a business need and watch it split into well-formed user stories with acceptance criteria, ready for your backlog.", "college-to-corporate": "The survival guide for freshers: workplace do's and don'ts, office vocabulary, ready-to-send messages and career tips.", "course-site": "An Udemy-style learning site for Informatica, Spoken English and Hindi, with course pages, lessons and doubt clearing.", "learnwithme-videos": "A tidy page of free video lessons you can browse and watch in one place.", "digital-product-marketplaces": "Compare platforms for selling digital products, covering fees, audience and fit, so you can pick where to launch.", "github-projects": "A showcase of my GitHub repositories and live sites, with search, filters and one-click links.", "heart-to-heart": "Talk to anyone with empathy. Pick a persona and an occasion, and get words that land, with a built-in Letter Hub.", "heart-to-heart-hinglish": "The same empathy coach in Hinglish, written in Devanagari for everyday Indian conversations.", "jobswipe": "Swipe through fresh jobs like cards. Each shows a match score against your skills, plus trending roles and what to learn next.", "letter-hub": "Pre-filled letters for leave, loans, promotions and more. Edit in place and download as Word or PDF.", "read-and-tap": "A kids' reading game with levels, a spelling mode and an Indian-accent voice that reads each word aloud.", "rental-agreement-generator": "Fill in a few details and get a clean rental or leave-and-licence agreement for India, as Word or PDF.", "resume-editor": "A form-style, editable resume with View and Edit modes, section tabs and one-click PDF or Word export.", "test-studio": "LLM-assisted website testing: generate test cases, run through them and write clear defect reports.", "ui-hardware-store": "A concept marketplace that treats software components like items on a hardware-store shelf.", "resume-to-video": "Turn a resume into a short first-person video, narrated by an AI presenter, to stand out in applications.", "wordly-translator": "Translate English into Indian languages instantly in a clean, distraction-free interface.", "sos-emergency-card": "A printable emergency card with country-wise numbers and tap-to-call QR codes, made for wallets and fridges.", "maths-stats-tools": "Handy maths and statistics calculators in one page: averages, spread, percentages, probability and more.", "name-mixer": "Mix and match name parts to discover unique baby-name ideas you actually like.", "pdf-to-word": "Turn a PDF back into editable Word text right in your browser. Nothing is uploaded to a server.", "password-generator": "Create strong, random passwords with the length and character mix you choose, copied in one click.", "birthday-invitation-maker": "Pick a theme, add the details and download a lovely birthday invitation as a JPG, ready to share.", "varit-store": "A neat app-store style storefront showcasing my small web apps.", "website-builder": "Assemble a simple website from ready blocks, then export it as a single page.", "website-ideas-todo": "A running checklist of website ideas to build, so good ones don't get lost.", "word-pin-lock": "A kids' game where you spell the right word to unlock the screen. Sneaky spelling practice.", "portfolio": "My personal portfolio page: who I am, what I build and how to reach me.", "portfolio-swipe": "A swipe-through version of the portfolio, made for browsing one card at a time on a phone.", "tarkeshwar-profile": "A professional profile page built from my resume, covering experience, skills and education.", "appley": "A tiny app launcher page that gathers a few favourite tools in one place.", "measurely": "Measurements, converters and size guides for everything measurable, from length and weight to clothing sizes.", "measuring-studies-suite": "A suite of measuring tools and study aids for learning units, scales and conversions.", "measure-anywhere": "An on-screen ruler and AR tape measure to size things around you with just your phone.", "medicine-finder": "Look up common medicines in English and Hindi, hear the usage read aloud, or scan a pack to find it.", "medical-report-reader": "Paste or upload a medical report and get a plain-language explanation of what the numbers mean.", "constitution-qa": "Ask questions about the Constitution of India and get answers in plain, simple words.", "electricity-tracker": "Log meter readings and watch your electricity bill build up, so there are no surprises at month end.", "waypoint": "Chart your route and guide the climb with a simple career-path planner for the next step.", "bundleit-occasion-shopper": "Tell it the occasion and get ready-made shopping bundles from Amazon, Flipkart, Myntra and Meesho.", "ai-apps-directory": "A directory of useful AI apps sorted by role, with direct links to their stores.", "relocation-reference": "A practical reference for moving and settling abroad: checklists, costs, paperwork and first-week to-dos.", "chaar-log": "\u201cKya kahenge, chaar log?\u201d A playful page about what the neighbours will say."};
+  var EM={"python-script-builder": "🐍", "image-to-ppt": "📊", "resume-builder": "📄", "tripfinder": "✈️", "splitcart": "🛒", "emergency-qr": "📲", "speak-easy": "🎙️", "india-travel-guide": "🕌", "six-thinking-hats": "🎩", "pocket-testbench": "🧪", "backlog-builder": "🗂️", "college-to-corporate": "🎓", "course-site": "👨‍🏫", "learnwithme-videos": "🎬", "digital-product-marketplaces": "🏪", "github-projects": "🐙", "heart-to-heart": "💞", "heart-to-heart-hinglish": "💬", "jobswipe": "💼", "letter-hub": "✉️", "read-and-tap": "📖", "rental-agreement-generator": "🏠", "resume-editor": "📝", "test-studio": "🔬", "ui-hardware-store": "🧰", "resume-to-video": "🎥", "wordly-translator": "🌐", "sos-emergency-card": "🚨", "maths-stats-tools": "🧮", "name-mixer": "👶", "pdf-to-word": "📕", "password-generator": "🔐", "birthday-invitation-maker": "🎂", "varit-store": "🛍️", "website-builder": "🧱", "website-ideas-todo": "✅", "word-pin-lock": "🔒", "portfolio": "🖼️", "portfolio-swipe": "📱", "tarkeshwar-profile": "🧑‍💼", "appley": "🍎", "measurely": "📏", "measuring-studies-suite": "📐", "measure-anywhere": "📏", "medicine-finder": "💊", "medical-report-reader": "🩺", "constitution-qa": "⚖️", "electricity-tracker": "💡", "waypoint": "🧭", "bundleit-occasion-shopper": "🎁", "ai-apps-directory": "🤖", "relocation-reference": "🚚", "chaar-log": "👥"};
+  var SEM={"Web Store (Appzy Digital)": "🏬", "Heart to Heart — Read · Write · Speak": "💞", "College to Corporate": "🎓", "MoveIn": "🏡", "Name Mixer": "👶", "Farm Visit Report": "🐔", "Rental Agreement Generator": "🏠", "SOS Emergency Card": "🚨", "Poultry Farm Manager": "🐔", "Talk It Out (Workplace Coach)": "🗣️", "QA Agent": "🕵️"};
+  var SITES=[
+ {name:"Web Store (Appzy Digital)",repo:"webstore",live:"https://webstore.solutions",cat:"Platform",desc:"Play-Store-style hub of 21+ free browser tools with search, categories and dark mode."},
+ {name:"Heart to Heart — Read · Write · Speak",repo:"readwritespeak",live:"https://readwritespeak.online",cat:"Communication",desc:"Communication coach with 36 personas, occasion guides and a Letter Hub. English and Hinglish."},
+ {name:"College to Corporate",repo:"dutybeauty",live:"https://dutybeauty.work",cat:"Career",desc:"Guide for freshers: do's and don'ts, workplace vocabulary, chat/email templates, career tips."},
+ {name:"MoveIn",repo:"onboarding",live:"https://movein.website",cat:"Platform",desc:"Settle-in onboarding site on GitHub Pages with a custom domain."},
+ {name:"Rental Agreement Generator",repo:"rentagreement",live:"https://rentalagreement.website",cat:"Documents",desc:"Build a rental or leave-and-licence agreement for India and download it as Word or PDF."},
+ {name:"SOS Emergency Card",repo:"emergencycard",live:"https://sosdocuments.website",cat:"Utility",desc:"Printable emergency-numbers card with tap-to-call QR codes for each country."},
+ {name:"Name Mixer",repo:"names",live:"https://babynames.website",cat:"Utility",desc:"Single-page baby-name mixer tool."},
+ {name:"My Work (this hub)",repo:"tkrcreations",live:"",cat:"Portfolio",desc:"Portfolio landing page for TKR Creations."}
+];
+var APPS=[
+ ["Python Script Builder", "python-script-builder.html", "Drag-and-drop tool that generates Python scripts for non-coders.", "Utility"],
+ ["Image to Editable PPT", "image-to-ppt.html", "Turns a screenshot, slide image or PDF into editable PowerPoint slides.", "Utility"],
+ ["Resume Builder", "resume-builder.html", "Create a resume for yourself or family by voice or typing.", "Career"],
+ ["TripFinder", "tripfinder.html", "Skyscanner-style flight search comparison prototype.", "Travel"],
+ ["SplitCart", "splitcart.html", "Split bulk-buy offers with neighbours.", "Community"],
+ ["Emergency QR Call", "emergency-qr.html", "QR code that dials a masked number in an emergency.", "Utility"],
+ ["Speak Easy", "speak-easy.html", "Speak a sentence and get instant grammar and phrasing feedback.", "Learning"],
+ ["India Travel Guide", "india-travel-guide.html", "Sights grouped by proximity with booking, cab and food links.", "Travel"],
+ ["Six Thinking Hats", "six-thinking-hats.html", "Weigh an idea through six perspectives and a verdict.", "Business"],
+ ["Pocket Testbench", "pocket-testbench.html", "Mobile-friendly testing workbench.", "Business"],
+ ["Backlog Builder", "backlog-builder.html", "Splits a business need into user stories automatically.", "Business"],
+ ["College to Corporate", "college-to-corporate.html", "Guide for freshers: do's, don'ts, vocabulary, ready-to-use messages.", "Career"],
+ ["LearnWithMe Courses", "course-site.html", "Udemy-style site for Informatica, Spoken English and Hindi.", "Learning"],
+ ["Life & Beyond Videos", "learnwithme-videos.html", "Free video lessons page.", "Learning"],
+ ["Digital Product Marketplaces", "digital-product-marketplaces.html", "Platforms for selling digital products, compared.", "Business"],
+ ["GitHub Projects", "github-projects.html", "Showcase of GitHub projects and live sites.", "Portfolio"],
+ ["Heart to Heart (English)", "heart-to-heart.html", "Talk to anyone with empathy: personas and occasions.", "Communication"],
+ ["Heart to Heart (Hinglish)", "heart-to-heart-hinglish.html", "Hinglish version in Devanagari script.", "Communication"],
+ ["JobSwipe", "jobswipe.html", "Tinder-style job discovery with match percentages.", "Career"],
+ ["Letter Hub", "letter-hub.html", "Ready-made letters, edit and save as Word or PDF.", "Documents"],
+ ["Read and Tap", "read-and-tap.html", "Kids reading game with levels and spelling mode.", "Kids"],
+ ["Rental Agreement Generator", "rental-agreement-generator.html", "House and flat lease in PDF or Word, for India.", "Documents"],
+ ["Resume Editor", "resume-editor.html", "Editable resume with View/Edit and PDF/Word export.", "Career"],
+ ["Test Studio", "test-studio.html", "LLM-assisted website testing and defect writing.", "Business"],
+ ["UI Hardware Store", "ui-hardware-store.html", "Software component marketplace concept.", "Business"],
+ ["Resume to Video", "resume-to-video.html", "Turns a resume into a short first-person video with an AI presenter.", "Career"],
+ ["Wordly Translator", "wordly-translator.html", "English to Indian languages translator.", "Utility"],
+ ["SOS Emergency Card", "sos-emergency-card.html", "Printable emergency-numbers card with QR tel: codes per country.", "Utility"],
+ ["Maths & Stats Tools", "maths-stats-tools.html", "Maths and statistics calculators in one page.", "Utility"],
+ ["Name Mixer", "name-mixer.html", "Baby-name mixer tool.", "Utility"],
+ ["PDF to Word (Wordy)", "pdf-to-word.html", "Turn a PDF back into editable Word text, in your browser.", "Documents"],
+ ["Password Generator", "password-generator.html", "Generate strong passwords.", "Utility"],
+ ["Birthday Invitation Maker", "birthday-invitation-maker.html", "Themed birthday invitations saved as JPG.", "Kids"],
+ ["VarIT Store", "varit-store.html", "App store page by Tarkesh.", "Portfolio"],
+ ["Website Builder", "website-builder.html", "Simple website builder.", "Utility"],
+ ["Website Ideas To-Do", "website-ideas-todo.html", "Checklist of website ideas.", "Business"],
+ ["Word PIN Lock", "word-pin-lock.html", "Kids' game: spell the word to unlock.", "Kids"],
+ ["Portfolio", "portfolio.html", "Personal portfolio page.", "Portfolio"],
+ ["Portfolio (Swipe)", "portfolio-swipe.html", "Swipe version of the portfolio.", "Portfolio"],
+ ["Tarkeshwar Profile", "tarkeshwar-profile.html", "Profile page built from my resume.", "Portfolio"],
+ ["Appley", "appley.html", "Small app launcher page.", "Utility"],
+ ["Measurely", "measurely.html", "Measuring guide and converter for everything measurable.", "Utility"],
+ ["Measuring Studies Suite", "measuring-studies-suite.html", "Measuring study tools suite.", "Learning"],
+ ["Measure Anywhere", "measure-anywhere.html", "AR tape measure and on-screen ruler.", "Utility"],
+ ["Medicine Finder", "medicine-finder.html", "Medicine information in English and Hindi, with pack scan.", "Health"],
+ ["Medical Report Reader", "medical-report-reader.html", "Plain-language reader for medical reports.", "Health"],
+ ["Samvidhan Sahayak", "constitution-qa.html", "Ask the Constitution of India in plain words.", "Learning"],
+ ["Meter & Bill", "electricity-tracker.html", "Log electricity readings and track the bill.", "Utility"],
+ ["Waypoint", "waypoint.html", "Chart the route, guide the climb.", "Career"],
+ ["BundleIt", "bundleit-occasion-shopper.html", "Occasion shopping bundles across Amazon, Flipkart, Myntra, Meesho.", "Shopping"],
+ ["AI Apps Directory", "ai-apps-directory.html", "AI apps by role, with store links.", "Learning"],
+ ["Relocation Reference", "relocation-reference.html", "Guide to moving and settling abroad.", "Platform"],
+ ["Kya Kahenge Chaar Log", "chaar-log.html", "Chaar Log fun page.", "Utility"]
+].map((a,i)=>({name:a[0],file:a[1],desc:a[2],cat:a[3],isnew:i<10}));
+
+/* Apps built in other chats whose HTML file isn't in the tools repo yet. Once a file is pushed there, move it into APPS. */
+var MORE=[
+ ["Poultry Farm Manager","Record keeping, cost-per-egg calculator, vaccinations and farm visit reports.","Business","",""],
+ ["Farm Visit Report","Web form replicating a poultry farm-visit paper report.","Business","","https://tarkeshstack.github.io/farmvisit/visit-report/"],
+ ["Talk It Out (Workplace Coach)","Communication coaching for IT employees.","Communication","",""],
+ ["QA Agent","LLM testing agent for my single-file web apps.","Business","",""]
+].map(a=>({name:a[0],desc:a[1],cat:a[2],chat:a[3],live:a[4],more:true}));
+  function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+  var WEB=SITES.filter(function(s){return s.live&&!/github\.io/.test(s.live)}).map(function(s){return {type:"web",name:s.name,cat:s.cat,desc:s.desc,src:s.live,emo:SEM[s.name]||"🌐"}});
+  var GH=APPS.map(function(a){var k=a.file.replace(".html","");return {type:"gh",name:a.name,cat:a.cat,desc:DESC[k]||a.desc,src:PAGES+a.file,isnew:a.isnew,emo:EM[k]||"📦"}});
+  MORE.filter(function(m){return m.live}).forEach(function(m){GH.push({type:"gh",name:m.name,cat:m.cat,desc:m.desc,src:m.live,emo:SEM[m.name]||"🌐"})});
+  var CON=MORE.filter(function(m){return !m.live}).map(function(m){return {type:"concept",name:m.name,cat:m.cat,desc:m.desc,emo:SEM[m.name]||"💡"}});
+  var LISTS={web:WEB,gh:GH,concept:CON},tab="web",q="",grid=document.getElementById("hubGrid"),empty=document.getElementById("hubEmpty");
+  ["web","gh","concept"].forEach(function(k,i){document.getElementById("hc"+(i+1)).textContent=LISTS[k].length});
+  function render(){
+    var l=LISTS[tab].filter(function(x){return !q||(x.name+" "+x.desc+" "+x.cat).toLowerCase().indexOf(q)>-1});
+    grid.innerHTML=l.map(function(x){
+      var g=GR[x.cat]||["#6366f1","#22d3ee"];
+      var act=x.type==="concept"?'<span class="hsoon">Prototype, no public link yet</span>':'<a class="btn n" href="'+esc(x.src)+'" target="_blank" rel="noopener">'+(x.type==="web"?"Visit site":"Open app")+'</a>';
+      return '<article class="hcard" style="--g1:'+g[0]+';--g2:'+g[1]+'"><div class="hthumb"><em>'+esc(x.cat)+'</em>'+(x.isnew?'<b>NEW</b>':'')+'<span class="hemo" aria-hidden="true">'+x.emo+'</span></div><div class="hbody"><h3>'+esc(x.name)+'</h3><p>'+esc(x.desc)+'</p>'+act+'</div></article>';
+    }).join("");
+    empty.hidden=l.length>0;
+  }
+  document.querySelectorAll("#hubTabs button").forEach(function(b){b.addEventListener("click",function(){
+    document.querySelectorAll("#hubTabs button").forEach(function(t){t.setAttribute("aria-pressed","false")});
+    b.setAttribute("aria-pressed","true");tab=b.dataset.t;render()})});
+  document.getElementById("hubQ").addEventListener("input",function(e){q=e.target.value.toLowerCase();render()});
+  render();
 })();
 </script>
 </body>
